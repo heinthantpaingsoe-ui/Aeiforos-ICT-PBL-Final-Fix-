@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Saira", sans-serif;
+    background-color: #28482E;
+    color: #f1f7ed;
+    margin: 0px;
+    padding: 0px;
+}
+.main-body{
+    background-color: #28482E;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.back-to-top-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+.back-to-top-link {
+    position: sticky;
+    top: 90vh;
+    left: 47%;
+    display: inline-block;
+    padding: 15px;
+    color: #f1f7ed;
+    text-decoration: none;
+    pointer-events: all;
+    margin-top: 673vh; 
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+.back-to-top {
+    margin: 0px;
+    width: 70px;
+    height: 70px;
+}
+.back-to-top:hover {
+    color: #6A994E;
+}
+/*Body section*/
+        .top-section{
+            display:flex;
+            height:350px;
+            background-image: linear-gradient(to right,
+            #28482E 0%,
+            #28482E 47%,
+            transparent 85%
+            ),
+            url('Images/Yangon.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-box{
+            background-color:#28482E;
+            width:50%;
+            padding:40px;
+            border-bottom-right-radius:200px;
+            border-top-right-radius: 200px;
+        }
+        .text-box h1{
+            font-size:60px;
+        }
+        .text-box h2{
+            font-size:35px;
+        }
+        .text-box p{
+            font-size:25px;
+        }
+.top-picture{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.top-image{
+    width: 50%;
+    height: 400px;
+}
+.next-page{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 45px;
+    text-decoration: none;
+    color: #f1f7ed;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.Singapore{
+    background-image: 
+    url(Images/Singapore.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Zurich{
+    background-image: 
+    url(Images/Zurich.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Oslo{
+    background-image: 
+    url(Images/Oslo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Copenhagen{
+    background-image: 
+    url(Images/Copenhagen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.Amsterdam{
+    background-image: 
+    url(Images/Amsterdam.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.bottom-image{
+    width: 50%;
+    height: 400px;
+    background-image: url(Images/Yangon5.avif);
+    background-position: center;
+    background-size: cover;
+}
+.right-text{
+    margin-top: 35px;
+    margin-left: 230px;
+    text-align: center;
+    width: 350px;
+}
+.left-text{
+    margin-top: 60px;
+    margin-right: 230px;
+    text-align: center;
+}
+.desc{
+    width: 350px;
+}
+.bottom-picture{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.bottom-image{
+    width: 50%;
+    height: 400px;
+}
+.card-line {
+    height: 4px;
+    flex-grow: 1;
+    border: none;
+    background-color: #f1f7ed;
+}
+.ss-hero{
+    height: 4px;
+    flex-grow: 1;
+    border: none;
+    background-color: #f1f7ed;
+    margin: 0px;
+}
+.col img {
+    width: 100%;
+    height: auto;
+}
+.col-1{width: 8.33%;} .col-2{width: 16.66%;} .col-3{width: 25%;} .col-4{width: 33.33%;}
+.col-5{width: 41.66%;} .col-6{width: 50%;} .col-7{width: 58.33%;} .col-8{width: 66.66%;}
+.col-9{width: 75%;} .col-10{width: 83.33%;} .col-11{width: 91.66%;} .col-12{width: 100%;}
+@media only screen and (max-width: 992px) {
+    .banner {
+        background: linear-gradient(to top, rgba(40, 72, 46, 0.95) 40%, rgba(40, 72, 46, 0.6) 100%), url('Images/Yangon.png') no-repeat center center;
+        background-size: cover;
+        flex-direction: column;
+    }
+    .banner-text {
+        max-width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .top-section {
+        background: linear-gradient(to top, rgba(40, 72, 46, 0.95) 40%, rgba(40, 72, 46, 0.6) 100%), url('Images/Yangon.png') no-repeat center center;
+        background-size: cover;
+        flex-direction: column;
+        height: auto;
+    }
+    .text-box {
+        width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+    .top-picture, .bottom-picture {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-image, .bottom-image {
+        width: 100%;
+        height: 300px;
+    }
+    .right-text, .left-text {
+        margin: 30px auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .desc {
+        width: 100%;
+        max-width: 500px;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 786px) {
+    .nav-toggle-label {
+        display: block;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #28482E;
+        padding: 20px;
+        box-sizing: border-box;
+        border-bottom: 3px solid #6A994E;
+        gap: 15px;
+    }
+    .dropdown-content {
+        position: relative;
+        margin-top: 5px;
+        background-color: rgba(106, 153, 78, 0.4);
+        box-shadow: none;
+    }
+    .nav-toggle-checkbox:checked ~ .nav {
+        display: flex;
+    }
+    .short-about {
+        max-width: 100%;
+        text-align: center;
+    }
+    .short-about-title {
+        justify-content: center;
+    }
+    .back-to-top-link {
+        left: 40%;
+        margin-top: 1110vh;
+    }
+    .col-s-1{width: 8.33%;} .col-s-2{width: 16.66%;} .col-s-3{width: 25%;} .col-s-4{width: 33.33%;}
+    .col-s-5{width: 41.66%;} .col-s-6{width: 50%;} .col-s-7{width: 58.33%;} .col-s-8{width: 66.66%;}
+    .col-s-9{width: 75%;} .col-s-10{width: 83.33%;} .col-s-11{width: 91.66%;} .col-s-12{width: 100%;}
+}
+@media only screen and (max-width: 600px) {
+    body {
+        padding-top: 90px;
+    }
+    .navbar {
+        height: 90px;
+    }
+    .nav {
+        top: 90px;
+    }
+    .banner-text h1 {
+        font-size: 32px;
+    }
+    .banner-text p {
+        font-size: 15px;
+    }
+    [class*="col-"] {
+        width: 100% !important;
+    }
+    .text-box h1 {
+        font-size: 36px;
+    }
+    .text-box p {
+        font-size: 18px;
+    }
+}

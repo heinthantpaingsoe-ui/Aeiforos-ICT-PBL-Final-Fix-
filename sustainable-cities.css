@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Saira", sans-serif;
+    background-color: #28482E;
+    color: #f1f7ed;
+    margin: 0px;
+    padding: 0px;
+}
+.main-body{
+    background-color: #28482E;
+    display: flex;
+    flex-direction: column;
+}
+.ssc{
+    margin-top: 100px;
+}
+/*Back To Top*/
+.back-to-top-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+.back-to-top-link {
+    position: sticky;
+    top: 85vh;
+    left: 90%;
+    display: inline-block;
+    padding: 15px;
+    color: #f1f7ed;
+    text-decoration: none;
+    pointer-events: all;
+    margin-top: 100vh; 
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+.back-to-top {
+    margin: 0px;
+    width: 70px;
+    height: 70px;
+}
+.back-to-top:hover {
+    color: #6A994E;
+}
+.cities-copenhagen{
+    margin-top: 485vh;
+}
+.cities{
+    margin-top: 455vh; 
+}
+/*Smart Cities-Info Section*/
+.main-title {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    min-height: 300px;
+    padding: 25px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+}
+.title-amsterdam{
+    background-image: 
+    linear-gradient(to bottom, rgba(45, 76, 49, 0) 0%, rgba(40, 72, 46, 1) 100%),
+    url('Images/Amsterdam.jpg');
+}
+.title-oslo{
+    background-image: 
+    linear-gradient(to bottom, rgba(45, 76, 49, 0) 0%, rgba(40, 72, 46, 1) 100%),
+    url('Images/Oslo.jpg');
+}
+.title-singapore{
+    background-image: 
+    linear-gradient(to bottom, rgba(45, 76, 49, 0) 0%, rgba(40, 72, 46, 1) 100%),
+    url('Images/Singapore.jpg');
+}
+.title-copenhagen{
+    background-image: 
+    linear-gradient(to bottom, rgba(45, 76, 49, 0) 0%, rgba(40, 72, 46, 1) 100%),
+    url('Images/Copenhagen.jpg');
+}
+.title-zurich{
+    background-image: 
+    linear-gradient(to bottom, rgba(45, 76, 49, 0) 0%, rgba(40, 72, 46, 1) 100%),
+    url('Images/Zurich.jpg');
+}
+.return-link{
+    margin-top: 70px;
+    margin-left: 8px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 35px;
+    width: auto;
+    padding: 0 15px;
+    color: #f1f7ed;
+    text-decoration: none;
+    color: #f1f7ed;
+    font-weight: bold;
+    font-size: 18px;
+}
+.title {
+    margin-top: 20px;
+    width: 350px;
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+.small-desc{
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.container-fluid{
+    display: flex;
+    background-color: #28482E;
+    color: white;
+}
+
+.card{
+    background-color: #28482E;
+    padding: 20px;
+    width: 80%;
+    margin-left: 40px;
+    text-align: left;
+    font-size: 18px;
+    border: 4px solid #6A994E;
+    padding-left: 40px;
+}
+.card-small{
+    background-color: #28482E;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    border: 4px solid #6A994E;
+    padding-left: 40px;
+}
+.card li{
+    list-style-type: disc;
+    margin: 10px 0;
+}
+.summary{
+    margin: 0px;
+}
+.right-card{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    column-gap: 200px;
+    row-gap: 10px;
+    margin-left: 100px;
+    justify-content: start;
+}
+.left-text{
+    flex: 1;
+    font-size: 25px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+.line {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+}
+.line h2 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.card-line {
+    height: 4px;
+    flex-grow: 1;
+    border: none;
+    background-color: #f1f7ed;
+}
+.container-cards h1{
+      font-size: 50px;
+      margin: 0;
+}
+.container-cards h2{
+      font-size: 35px;
+      font-weight: normal;
+}
+.container-cards h1, 
+.container-cards h2, 
+.card-hori {
+  margin: 20px 20px;
+}
+.card-hori{
+      background-color: #6fa24d;
+      height: 150px;
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 25px;
+      font-size: 25px;
+      margin-bottom: 30px;
+}
+.card-hori p{
+    margin: 0px;
+}
+.next-page{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 45px;
+    text-decoration: none;
+    color: #f1f7ed;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.hero-right{
+    width: 50%;
+    background-image: url("Hero-Home-1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    background-color: #28482E;
+    padding: 40px;
+    color: white;
+}
+.card h1{
+    margin: 20px 0;
+}
+/*Cities Section*/
+/*Intro*/
+.bubble-hero-section{
+    height: 500px;
+    background-image: linear-gradient(to top,
+    #28482E 0%,
+    #28482E 45%,
+    transparent 85%
+    ),
+    url('Images/Yangon.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+.bubble-hero-contents{
+    background-color: rgba(40, 72, 46, 0.85);
+    width: 50%;
+    height: 60%;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+/*List*/
+.smart-city-hero {
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.smart-city-hero-text {
+    color: white;
+    padding: 60px;
+    max-width: 40%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 5;
+}
+.align-bottom-right {
+    justify-content: flex-start; 
+    align-items: stretch;
+}
+
+.align-bottom-right {
+    justify-content: flex-end;   
+    align-items: stretch;
+}
+.align-bottom-right .smart-city-hero-text {
+    text-align: right;
+}
+.credits {
+    position: absolute;
+    bottom: 15px;
+    text-decoration: none;
+    color: #f1f7ed;
+    font-size: 12px;
+}
+.smart-city-hero-text h1{
+    margin-top: 0px;
+}
+#right{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 400px;
+    margin-top: 0px;
+    overflow: hidden;
+}
+#right h1{
+    display: flex;
+    justify-content: flex-end;
+}
+#right p{
+    text-align: right;
+}
+.right{
+    height: 30px;
+    width: 150px;
+    background-color: #28482e;
+    color: #f1f7ed;
+    border-radius: 7px;
+    border: 1px solid #6a994e;
+    padding-top: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Singapore{
+    background-image: 
+    linear-gradient(to right,
+    #28482E 0%,
+    #28482E 45%,
+    transparent 85%
+    ),
+    url('Images/Singapore.jpg');
+    background-position: left;
+    background-size: cover;
+}
+.Zurich{
+    background-image: 
+    linear-gradient(to left,
+    #28482E 0%,
+    #28482E 45%,
+    transparent 85%
+    ),
+    url('Images/Zurich.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Oslo{
+    background-image: 
+    linear-gradient(to right,
+    #28482E 0%,
+    #28482E 45%,
+    transparent 85%
+    ),
+    url('Images/Oslo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Copenhagen{
+    background-image: 
+    linear-gradient(to left,
+    #28482E 0%,
+    #28482E 45%,
+    transparent 85%
+    ),
+    url('Images/Copenhagen.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.Amsterdam{
+    background-image: 
+    linear-gradient(to right,
+    #28482E 0%,
+    #28482E 45%,
+    transparent 85%
+    ),
+    url('Images/Amsterdam.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#top{
+    margin-top: 0px;
+}
+.ss-hero{
+    height: 4px;
+    flex-grow: 1;
+    border: none;
+    background-color: #f1f7ed;
+    margin: 0px;
+}
+.learn-more{
+    height: 30px;
+    width: 150px;
+    background-color: #28482e;
+    color: #f1f7ed;
+    border-radius: 7px;
+    border: 1px solid #6a994e;
+    padding-top: 3px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.learn-more a{
+    text-decoration: none;
+    color: #f1f7ed;
+    font-size: 15px;
+}
+.credits{
+    text-decoration: none;
+    color: #f1f7ed;
+    font-size: 15px;
+    position: absolute;
+    top: 375px;
+    bottom: 15px;
+}
+.c-left{
+    left: 1570px;
+}
+.c-right{
+    right: 1550px;
+}
+.col img {
+    width: 100%;
+    height: auto;
+}
+.col-1{width: 8.33%;} .col-2{width: 16.66%;} .col-3{width: 25%;} .col-4{width: 33.33%;}
+.col-5{width: 41.66%;} .col-6{width: 50%;} .col-7{width: 58.33%;} .col-8{width: 66.66%;}
+.col-9{width: 75%;} .col-10{width: 83.33%;} .col-11{width: 91.66%;} .col-12{width: 100%;}
+@media only screen and (max-width: 992px) {
+    .banner {
+        background: linear-gradient(to top, rgba(40, 72, 46, 0.95) 40%, rgba(40, 72, 46, 0.6) 100%), url('Images/Yangon.png') no-repeat center center;
+        background-size: cover;
+        flex-direction: column;
+    }
+    .banner-text {
+        max-width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .container-fluid, .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .card {
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+    .right-card {
+        margin-left: 0;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        column-gap: 20px;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .bubble-hero-contents {
+        width: 80%;
+    }
+    .smart-city-hero {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .smart-city-hero-text {
+        max-width: 100%;
+        padding: 30px;
+        text-align: left !important;
+    }
+    .align-bottom-right .smart-city-hero-text {
+        text-align: left;
+    }
+    .title {
+        font-size: 50px;
+        width: 100%;
+    }
+    .card-hori {
+        height: auto;
+    }
+    .back-to-top-link {
+        left: 40%;
+        margin-top: 460vh;
+    }
+    .cities-copenhagen, .cities {
+        margin-top: 0;
+    }
+    .main-title {
+        min-height: 250px;
+        padding: 20px;
+    }
+    .return-link {
+        top: 10px;
+        left: 10px;
+    }
+}
+@media only screen and (max-width: 786px) {
+    .nav-toggle-label {
+        display: block;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #28482E;
+        padding: 20px;
+        box-sizing: border-box;
+        border-bottom: 3px solid #6A994E;
+        gap: 15px;
+    }
+    .dropdown-content {
+        position: relative;
+        margin-top: 5px;
+        background-color: rgba(106, 153, 78, 0.4);
+        box-shadow: none;
+    }
+    .nav-toggle-checkbox:checked ~ .nav {
+        display: flex;
+    }
+    .short-about {
+        max-width: 100%;
+        text-align: center;
+    }
+    .short-about-title {
+        justify-content: center;
+    }
+    .col-s-1{width: 8.33%;} .col-s-2{width: 16.66%;} .col-s-3{width: 25%;} .col-s-4{width: 33.33%;}
+    .col-s-5{width: 41.66%;} .col-s-6{width: 50%;} .col-s-7{width: 58.33%;} .col-s-8{width: 66.66%;}
+    .col-s-9{width: 75%;} .col-s-10{width: 83.33%;} .col-s-11{width: 91.66%;} .col-s-12{width: 100%;}
+}
+@media only screen and (max-width: 600px) {
+    body {
+        padding-top: 90px;
+    }
+    .navbar {
+        height: 90px;
+    }
+    .nav {
+        top: 90px;
+    }
+    .banner-text h1 {
+        font-size: 32px;
+    }
+    .banner-text p {
+        font-size: 15px;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .container-cards h1 {
+        font-size: 32px;
+    }
+    .container-cards h2 {
+        font-size: 22px;
+    }
+    .bubble-hero-contents {
+        width: 95%;
+        height: 80%;
+    }
+    .right-card {
+        grid-template-columns: 100%;
+    }
+    .back-to-top {
+        width: 55px;
+        height: 55px;
+    }
+    [class*="col-"] {
+        width: 100% !important;
+    }
+    .main-title {
+        min-height: 200px;
+    }
+    .card-small {
+        padding: 15px;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+    .card {
+        padding: 15px;
+        padding-left: 20px;
+        font-size: 16px;
+    }
+    .line h2 {
+        font-size: 36px;
+    }
+}

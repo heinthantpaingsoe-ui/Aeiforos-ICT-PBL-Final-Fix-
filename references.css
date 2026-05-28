@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color:#28482e;
+            font-family: "Saira", sans-serif;
+            color:white;
+            margin:0;
+        }
+        .container-fluid{
+            margin-top: 100px;
+        }
+        .top-section{
+            display:flex;
+            height:350px;
+            background-image: linear-gradient(to right,
+            #28482E 0%,
+            #28482E 47%,
+            transparent 85%
+            ),
+            url('Images/Yangon.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-box{
+            background-color:#28482E;
+            width:50%;
+            padding:40px;
+            border-bottom-right-radius:200px;
+            border-top-right-radius: 200px;
+        }
+        .text-box h1{
+            font-size:60px;
+            margin-bottom: 0px;
+        }
+        .text-box p{
+            font-size:25px;
+            margin-top: 10px;
+        }
+    .line {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+    }
+    .line h2 {
+        margin: 0;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1;
+        }
+        .card-line {
+            height: 4px;
+            flex-grow: 1;
+            border: none;
+            background-color: #f1f7ed;
+        }
+        .back-to-top-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+.back-to-top-link {
+    position: sticky;
+    top: 90vh;
+    left: 47%;
+    display: inline-block;
+    padding: 15px;
+    color: #f1f7ed;
+    text-decoration: none;
+    pointer-events: all;
+    margin-top: 695vh; 
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+.back-to-top {
+    margin: 0px;
+    width: 70px;
+    height: 70px;
+}
+.back-to-top:hover {
+    color: #6A994E;
+}
+.ref-box {
+    background-color: #28482E;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    border: 2px solid #6A994E;
+}
+.ref-box h3 {
+    margin-top: 0;
+    font-size: 28px;
+}
+.ref-list {
+    list-style-type: disc;
+
+    padding-left: 0;
+}
+.ref-item {
+    margin-bottom: 10px;
+    font-size: 18px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.ref-item a {
+    color: #f1f7ed;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 992px) {
+    .top-section {
+        background: linear-gradient(to top, rgba(40, 72, 46, 0.95) 40%, rgba(40, 72, 46, 0.6) 100%), url('Images/Yangon.png') no-repeat center center;
+        background-size: cover;
+        flex-direction: column;
+        height: auto;
+    }
+    .text-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .back-to-top-link {
+        left: 40%;
+        margin-top: 800vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding-top: 90px;
+    }
+    .container-fluid {
+        margin-top: 0px;
+    }
+    .text-box h1 {
+        font-size: 32px;
+    }
+    .text-box p {
+        font-size: 15px;
+    }
+}
