@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #28482E;
+    font-family: "Saira", sans-serif;
+    color: #f1f7ed;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+}
+.main-body, .container-fluid {
+    background-color: #28482e;
+    width: 100%;
+}
+.back-to-top-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+.back-to-top-link {
+    position: sticky;
+    top: 90vh;
+    left: 47%;
+    display: inline-block;
+    padding: 15px;
+    color: #f1f7ed;
+    text-decoration: none;
+    pointer-events: all;
+    margin-top: 210vh; 
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+.back-to-top {
+    margin: 0px;
+    width: 70px;
+    height: 70px;
+}
+.back-to-top:hover {
+    color: #6A994E;
+}
+/*Body Section*/
+.banner {
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+    background: linear-gradient(to right, #28482E 0%, #28482E 45%, transparent 85%), url('Images/Yangon.png') no-repeat center center;
+    background-size: cover;
+}
+.banner-text {
+    color: white;
+    padding: 40px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-text h1 {
+    margin: 0 0 15px 0;
+}
+.banner-text p {
+    line-height: 1.6;
+    margin: 0;
+}
+.home-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 15px;
+}
+.home-button {
+    background-color: rgba(106, 153, 78, 0.2);
+    border: 1px solid #6a994e;
+    border-radius: 20px;
+    padding: 8px 18px;
+    transition: all 0.3s ease;
+}
+.home-button:hover {
+    background-color: #6a994e;
+}
+.home-button-link {
+    text-decoration: none;
+    color: #f1f7ed;
+    font-size: 14px;
+    font-weight: 600;
+}
+.card-line {
+   height: 4px;
+   flex-grow: 1;
+   border: none;
+   background-color: #f1f7ed;
+   margin-top: 0px;
+   margin-bottom: 5px;
+}
+.container-hero-home-1 {
+    width: 100%;
+    padding: 20px 0;
+}
+.hero-home-1 {
+    min-height: 350px;
+    background: url("Images/Yangon3.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.short-about {
+    width: 100%;
+    max-width: 650px;
+    height: 100%;
+    background-color: rgba(40, 72, 46, 0.85);
+    padding: 30px;
+    box-sizing: border-box;
+}
+.short-about-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.short-about-title h2 {
+    margin: 0;
+}
+.robot {
+    height: 50px;
+    width: auto;
+}
+.short-about-text p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.about-button {
+    padding: 8px 20px;
+    background-color: #28482e;
+    border: 1px solid #6a994e;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.about-button a {
+    text-decoration: none;
+    color: #f1f7ed;
+    font-size: 14px;
+}
+/*Responsive Design*/
+.col img {
+    width: 100%;
+    height: auto;
+}
+.col-1{width: 8.33%;} .col-2{width: 16.66%;} .col-3{width: 25%;} .col-4{width: 33.33%;}
+.col-5{width: 41.66%;} .col-6{width: 50%;} .col-7{width: 58.33%;} .col-8{width: 66.66%;}
+.col-9{width: 75%;} .col-10{width: 83.33%;} .col-11{width: 91.66%;} .col-12{width: 100%;}
+@media only screen and (max-width: 992px) {
+    .banner {
+        background: linear-gradient(to top, rgba(40, 72, 46, 0.95) 40%, rgba(40, 72, 46, 0.6) 100%), url('Images/Yangon.png') no-repeat center center;
+        background-size: cover;
+        flex-direction: column;
+    }
+    .banner-text {
+        max-width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 786px) {
+    .nav-toggle-label {
+        display: block;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #28482E;
+        padding: 20px;
+        box-sizing: border-box;
+        border-bottom: 3px solid #6A994E;
+        gap: 15px;
+    }
+    .dropdown-content {
+        position: relative;
+        margin-top: 5px;
+        background-color: rgba(106, 153, 78, 0.4);
+        box-shadow: none;
+    }
+    .nav-toggle-checkbox:checked ~ .nav {
+        display: flex;
+    }
+    .short-about {
+        max-width: 100%;
+        text-align: center;
+    }
+    .short-about-title {
+        justify-content: center;
+    }
+    .back-to-top-link {
+        left: 40%;
+        margin-top: 270vh;
+    }
+    .col-s-1{width: 8.33%;} .col-s-2{width: 16.66%;} .col-s-3{width: 25%;} .col-s-4{width: 33.33%;}
+    .col-s-5{width: 41.66%;} .col-s-6{width: 50%;} .col-s-7{width: 58.33%;} .col-s-8{width: 66.66%;}
+    .col-s-9{width: 75%;} .col-s-10{width: 83.33%;} .col-s-11{width: 91.66%;} .col-s-12{width: 100%;}
+}
+@media only screen and (max-width: 600px) {
+    body {
+        padding-top: 90px;
+    }
+    .navbar {
+        height: 90px;
+    }
+    .nav {
+        top: 90px;
+    }
+    .banner-text h1 {
+        font-size: 32px;
+    }
+    .banner-text p {
+        font-size: 15px;
+    }
+    [class*="col-"] {
+        width: 100% !important;
+    }
+}
